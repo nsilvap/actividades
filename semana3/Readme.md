@@ -42,4 +42,4 @@ DESCRIPCIÓN ACTIVIDADES SEMANA 3:
 	Los nombres y apellidos deben ser CamelCase es decir, mayúsculas iniciales. Para el título sólo se aceptan caracteres ASCII. 
 	La eñe (ñ) reemplazarla con n, sin tildes. Las palabras separadas por espacios. La descripción puede tener eñes (ñ) y tildes.
 	
-	Se ha dispuesto como ejemplo el pull request 
+	Se ha dispuesto como ejemplo el pull request https://github.com/tdp201503/actividades/pull/2
