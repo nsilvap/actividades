@@ -1,16 +1,16 @@
-1. ¿Cuál es su carrera?
--> 	Ingeniería Electrónica
+ï»¿1. Â¿Cual es su carrera?
+-> 	IngenierÃ­a ElectrÃ³nica
 
-2. ¿En que semestre va?
+2. Â¿En que semestre va?
 -> 	Actualmente estoy cursando 5 semestre.
 
-3. ¿Qué asignaturas está viendo?
+3. Â¿QuÃ© asignaturas estÃ¡ viendo?
 -> 	Me encuentro viendo 6 materias en este semenstre las cuales son: Calculo Integral, Tecnicas de programacion, Electromedicina, Estructuras computacionales,Electronica analogica 2
         Contexto-Astronomia.
 	
 
-4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
--> 	Desde que era un niño me ha llamado demasiado la atencion el hecho de poder comprender el como funcionan las cosas, y apartir de ello porder diseñar cosas mejores,
+4. Â¿PorquÃ© ingresÃ³ a estudiar esa carrera? Â¿QuÃ© lo(a) motivÃ³?
+-> 	Desde que era un niÃ±o me ha llamado demasiado la atencion el hecho de poder comprender el como funcionan las cosas, y apartir de ello porder diseÃ±ar cosas mejores,
         cosas con las que el ser humano tenga la facilidad de vivir mejor,tambien me llama mucho la atencion de recrear robots para exploraciones extraterrestres como lo es
         el rover curiosity de la nasa. 
         
@@ -18,18 +18,18 @@
         dispositivos, puedo decir que la programacion no se me queda atras, me gusta como lo dije anteriormente, conocer el funcionamiento de las cosas, el hecho de programar
         me ayudaria para recrear los "movimientos" o "pasos" que realizara un proyecto basado en un robot.
 
-5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+5. Â¿QuÃ© habilidades quiere desarrollar como ingeniero(a)?
 ->	Poder ser capas de construir desde cero proyectos de robotica y programacion, desde cero seria hardware y sofware por mi cuenta.
 
-6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+6. Â¿Por quÃ© tipo de actividades le gustarÃ­a que le pagaran a nivel profesional?
 ->	Me gustarian que me pagaran por enviar sondas roboticas a planetas diferentes a la tierra, y manejarles para investigacion espacia.
         Me gustarian trabajar en alguna agencia espacial como lo es la NASA, la ESA, la FKA, etc.
-	Me gustaría tener que desarrollar o descubrir algo nuevo para el mundo, algo que pueda marcar la historia.
+	Me gustarÃ­a tener que desarrollar o descubrir algo nuevo para el mundo, algo que pueda marcar la historia.
         Me gustaria encontrarme con gente de la que yo aprenda y si es posbile que ellos aprendan de mi, algo asi como un intercambio mutuo de conocimiento. 
 	Me gustaria en una edad mas avanzada instrurir personas en la construccion basica de robots y manejo de software
 	
 
-7. ¿Qué le apasiona a nivel profesional?
+7. Â¿QuÃ© le apasiona a nivel profesional?
 ->	La creacion de proyectos que realicen mis ideales personales, como la creacion de robots y la programacion de los mismos.
-8. ¿De qué parte de Colombia es?
+8. Â¿De quÃ© parte de Colombia es?
 ->	Soy de Palmira-Valle del cauca.
