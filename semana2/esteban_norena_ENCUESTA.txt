@@ -1,0 +1,37 @@
+1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> Semestre 4
+
+3. ¿Qué asignaturas está viendo?
+-> 	Electrónica Analógica 2
+	Ecuaciones Diferenciales
+	Cálculo Vectorial
+	Técnicas de Programación
+	Física: Oscilaciones, ondas y óptica
+	Cátedra Gabriel García Marquez
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> 	Desde pequeño me ha motivado mucho las nuevas tecnologías, mi papá fue programador y fui estimulado por eso, me gustaba destapar los aparatos y dispositivos, mirarlos muy de cerca
+	y tratar de entenderlos, me gustaba volver a armarlos y siempre me he sentido curioso respecto a todo esta tecnología de los sistemas. Me interesaba desde un principio la Ingenieria
+	Mecatrónica por el hecho de poder crear cosas nuevas e innovar, sin embargo no se me fue posible estudiarla por diferentes razones y el área que mas me atraía de esta era la
+	Electrónica, me gusta mucho programar y me emociona el diseño, poder crear cosas desde 0
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	Diseño de circuitos, programación avanzada, diseño digital y robótica.
+
+6. ¿Por qué tipo de actividades le gustaríaa que le pagaran a nivel profesional?
+->	Me gustaría que me pagaran por diseñar dispositivos automáticos
+	Me gustaría poder programar a nivel avanzado
+	Me gustaría usar la robótica y crear nuevos dispositivos e innovadores que ayuden a la sociedad con el progreso
+	Me gustaría poder simplificar y mejorar los dispositivos ya hechos para que sean asequibles a todas las personas
+
+7. ¿Qué le apasiona a nivel profesional?
+->	Me apasiona mucho el diseño, empezar desde 0 y crear algo innovador, que funcione y sea util, me apasiona ingeniar y que las demas personas encuentren los ingenios
+	utiles y buenos. Me apasiona también poder viajar a paises potencias en esta industria y aprender demasiado de estas. Me gusta mucho la exactitud de las matemáticas y 
+	como estas son tan esenciales en un diseño, me apasiona saber como lo que se hace en papel es reflejado en la práctica y el experimento, me apasiona saber el origen de
+	cada cosa que diseño y que aprendo.
+
+8. ¿De qué parte de Colombia es?
+->	Soy de Florencia, Caquetá pero toda mi familia es de aquí de Manizales, vivo aquí desde el 2013.
