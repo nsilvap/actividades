@@ -1,4 +1,4 @@
-﻿1. ¿Cuál es su carrera?
+1. ¿Cuál es su carrera?
 -> 	Ingeniería Eléctrica
 
 2. ¿En que semestre va?
