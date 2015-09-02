@@ -1,0 +1,25 @@
+﻿1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> 	Estoy cursando cuarto semestre
+
+3. ¿Qué asignaturas está viendo?
+-> 	Electronica analogica I, calculo vectorial, sistemas digitales, tecnicas de programacion, ingles, fisica II.
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> 	Siempre he querido saber como funcionan las cosas, por ejemplo el por que cuando movia algo en mis juguetes a control remoto tenia tal efecto, ademas es una 
+	carrera con la cual se puede cambiar el mundo por uno mejor y con la cual se puede facilitar el dia a dia de la sociedad. 
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	Poder crear circuitos, diseñando el hardware y el software, poder diseñar productos utiles para la sociedad.
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+->	Me gustaria que me paguen principalmente por las habilidades que quiero desarrollar, por compartir el conocimiento adquirido (profesor de la U).
+	Por colaborar en el progreso tecnologico del planeta y de la humanidad. 
+
+7. ¿Qué le apasiona a nivel profesional?
+->	Especializarme en el campo de la robotica. Me emocinona mucho la idea de pensar que algun dia puedo llegar a hacer un robot que realice muchas cosas.
+	y pues ser reconocido por mi trabajo en la sociedad
+8. ¿De qué parte de Colombia es?
+->	Soy de San Martin De Loba Bolivar.
