@@ -1,0 +1,16 @@
+1. ¿Cuál es su carrera?
+R// Ingeniería Electrónica
+2. ¿En que semestre va?
+R// Cuarto Semestre
+3. ¿Qué asignaturas está viendo?
+R// Cálculo Vectorial, Electrónica Analógica II, Sistemas Digitales, Física Oscilaciones Ondas y Óptica, Técnicas de Programación, Inglés III
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+R// Porque siempre me he interezado por entender el comportamiento de los dispositivos electrónicos, siempre me ha gustado la programación, me gustan las matemáticas y esta carrera abarca los campos que a mi me gustan. La estudio por vocación
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+R// Aprender a se un excelente programador y diseñador de software, programar hardware, entender la electrónica, saber algo sobre administración y como su mismo nombre lo dice, tener el ingenio para resolver problemas referentes al área de software y hardware no solo en computación
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+R// Por hacer negocios, por programar, por ser inversionista, por desarrollar software, por programar hardware., por ser inversionista en el campo de la electrónica y por enseñar con excelencia lo que yo se y le pueda ayudar a otros
+7. ¿Qué le apasiona a nivel profesional?
+R// Los negocios, la programación, el hardware, la electrónica, la educación...
+8. ¿De qué parte de Colombia es?
+R// Manizales - Caldas
