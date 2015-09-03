@@ -1,31 +1,31 @@
-1. øCu·l es su carrera?
--> 	IngenierÌa ElectrÛnica
+1. ¬øCu√°l es su carrera?
+-> 	Ingenier√≠a Electr√≥nica
 
-2. øEn que semestre va?
+2. ¬øEn que semestre va?
 -> 	Estoy cursand cuarto semestre.
 
-3. øQuÈ asignaturas est· viendo?
--> 	TÈcnicas de ProgramaciÛn 
-        ElectrÛnica AnalÛgica 
+3. ¬øQu√© asignaturas est√° viendo?
+-> 	T√©cnicas de Programaci√≥n 
+        Electr√≥nica Anal√≥gica 
 		Estructuras Computacionales
 		Calculo Vectorial
 		Ecuaciones Diferenciales 
 		Inlges III
 
-4. øPorquÈ ingresÛ a estudiar esa carrera? øQuÈ lo(a) motivÛ?
--> 	Desde muy pequeÒa me llamo la ateniÛn la robotica, y estube investigando que carrera era mas a fin en un comienzo me decidi por mecatrÛnica 
-    pero me llamo mas la arenciÛn electrÛnica. Mas adelante desearia especializarme en robotica e inplementarla en un ·rea medio-ambiental.
+4. ¬øPorqu√© ingres√≥ a estudiar esa carrera? ¬øQu√© lo(a) motiv√≥?
+-> 	Desde muy peque√±a me llamo la ateni√≥n la robotica, y estube investigando que carrera era mas a fin en un comienzo me decidi por mecatr√≥nica 
+    pero me llamo mas la arenci√≥n electr√≥nica. Mas adelante desearia especializarme en robotica e inplementarla en un √°rea medio-ambiental.
 	
-5. øQuÈ habilidades quiere desarrollar como ingeniero(a)?
-->	Crear circuitos,  programas, poder crear productos desde cero, diseÒando el hardware y el software. Innovar.
+5. ¬øQu√© habilidades quiere desarrollar como ingeniero(a)?
+->	Crear circuitos,  programas, poder crear productos desde cero, dise√±ando el hardware y el software. Innovar.
 
-6. øPor quÈ tipo de actividades le gustarÌa que le pagaran a nivel profesional?
-->	Me gustarÌa que me pagaran por crear robots inplementados a la recuperacion del meido ambiete.
-	Me gustarÌa tambiÈn tener la posibilidad de conocer diferentes culturas y trabajar de la mano de ellos. 
+6. ¬øPor qu√© tipo de actividades le gustar√≠a que le pagaran a nivel profesional?
+->	Me gustar√≠a que me pagaran por crear robots inplementados a la recuperacion del meido ambiete.
+	Me gustar√≠a tambi√©n tener la posibilidad de conocer diferentes culturas y trabajar de la mano de ellos. 
 
-7. øQuÈ le apasiona a nivel profesional?
+7. ¬øQu√© le apasiona a nivel profesional?
 ->	Me apasiona saber como funciona cada uno de los dispositivos que usamos y es aun mas sorprendente cuando se juntan y se puede crear un dispositivo, producto entre otros. 
-    Por otra parte me llama la atenciÛn que atraves de estos dispositivos puedo lograr mi objetivo, crear  robots o maquinaria que disminuya o acabe con los problemas ambientales.
+    Por otra parte me llama la atenci√≥n que atraves de estos dispositivos puedo lograr mi objetivo, crear  robots o maquinaria que disminuya o acabe con los problemas ambientales.
 	
-8. øDe quÈ parte de Colombia es?
-->	Soy de Bogot· D.C.
+8. ¬øDe qu√© parte de Colombia es?
+->	Soy de Bogot√° D.C.
