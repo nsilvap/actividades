@@ -1,0 +1,31 @@
+﻿1. ¿Cuál es su carrera?
+->  Ingeniería Electrónica
+
+	2. ¿En que semestre va?
+-> Voy en cuarto semestre
+
+	3. ¿Qué asignaturas está viendo?
+-> Actualmente estoy viendo Técnicas de programación, Electrónica Analógica, Estructuras Computacionales, Física Electricidad Y Magnetismo e Ingles III
+
+	4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> Por que me llama mucho la atencíon el diseñar o fabricar maquinas o robots automatizados para ayuda de las labores físicas extremas de ciertos trabajos
+    En general me llama mucho la atención el diseño y funcionamiento de los circuitos, el gran campo de investigacion que ofrece la electrónica, la utilidad que tienen
+	los aparatos electrónicos en la vida del hombre.
+	
+	5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+-> Quiero tener la capacidad de poder analizar y entender cualquier problema relacionado con la Electrónica, Contribuir con mis conocimientos en problematicas sociales
+	Diseñar, fabricar, programar y construir aparatos electónicos que ayuden a los demás, crear aparatos nuevos, descubrir nuevas tecnologias e innovar el mundo de la electrónica
+	
+	6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+-> Me gustaría que me pagaran por diseñar nueva tecnología que contribuya en el desempeño laboral de las personas.
+-> Me gustaria que me pagaran por investigar, por crear. por instruir a las demas personas con mi conocimiento.
+-> Me gustaria que me pagaran por crear nuevos proyectos, por contribuir en la ciencia, por programar robots.
+-> Me gustaria poder trabajar para una asociación muy importante, la conoida IEEE cuyas siglas significan Institute of Electrical and Electronic Engineers, y poder aportar a ellos
+    nuevas ideas de innovacion.
+	
+	7. ¿Qué le apasiona a nivel profesional?
+->Me apasiona el saber que la electrónica es muy importante en la vida de las personas, y lo facil que esta la hace, el pensar que puedo llegar a ser un profesional en este campo me apasiona
+	el poder desarrollar tecnologias para el bien de la comunidad.
+
+	8. ¿De qué parte de Colombia es?
+-> San José De Albán-Nariño	
