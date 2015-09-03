@@ -1,21 +1,21 @@
-ï»¿1. ¿Cuál es su carrera?
+ï»¿1. Â¿CuÃ¡l es su carrera?
 	Ingenieria Electronica
-2. ¿En que semestre va?
+2. Â¿En que semestre va?
 	Cuarto Semestre
-3. ¿Qué asignaturas está viendo?
+3. Â¿QuÃ© asignaturas estÃ¡ viendo?
 	- Tecnicas de programacion.
 	- Sistemas digitales
 	- Calculo Integral
 	- Redes telefonicas 
 	- Expresion Grafica 
 	- Analogica I 
-4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+4. Â¿PorquÃ© ingresÃ³ a estudiar esa carrera? Â¿QuÃ© lo(a) motivÃ³?
 	Por su gran campo de accion, principalmente en la medicina y las telecomunicaciones. 
-5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+5. Â¿QuÃ© habilidades quiere desarrollar como ingeniero(a)?
 	La logica y la programacion.
-6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+6. Â¿Por quÃ© tipo de actividades le gustarÃ­a que le pagaran a nivel profesional?
 	Por realizar una aplicacion movil y por dearrollar un dispositivo electronico que ayude a la medicina.
-7. ¿Qué le apasiona a nivel profesional?
+7. Â¿QuÃ© le apasiona a nivel profesional?
 	Poder contribuir con el avance de la sociedad a nivel tecnologico y aplicarlo a el medio ambiente y a la salud.
-8. ¿De qué parte de Colombia es?
+8. Â¿De quÃ© parte de Colombia es?
 Manizales-Caldas
