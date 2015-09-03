@@ -1,0 +1,25 @@
+	1. ¿Cuál es su carrera?
+	Ingenieria Electronica
+	2. ¿En que semestre va?
+	Cuarto Semestre
+	3. ¿Qué asignaturas está viendo?
+	- Tecnicas de programacion.
+	- Estructuras Computacionales
+	- Calculo Integral
+	- Fisica de oscilaciones
+	- Ingles II
+	- Analogica II 
+	4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+	Porque desde porque desde el colegio vengo encaminado por el lado de la electronica.
+	Me apasiona saber como funcionan las cosas.
+	5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+	Poder diseñar circuitos electronicos para diferentes utilizaciones.
+	Programacion en los diferente lenguajes existentes en el medio.
+	Me gustaria poder ayudar con la industria Apicolo (Trabajo con abejas).
+	6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+	Dieseño electronico o programacion.
+	7. ¿Qué le apasiona a nivel profesional?
+	Saber que con todo lo que hacemos con ingenieros podemos ayudar a las personas.
+	Ayudar con el desarrollo tecnologico.
+	8. ¿De qué parte de Colombia es?
+	Neiva, Huila.
