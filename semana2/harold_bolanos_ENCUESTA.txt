@@ -1,0 +1,35 @@
+﻿1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> 	Voy en 4to semestre.
+
+3. ¿Qué asignaturas está viendo?
+-> 	Mis asignaturas este semestre son: Electrónica analógica 2, Sistemas Digitales, Técnicas de Programación, Cálculo Vectorial, 
+	Física: (Oscilaciones, ondas y óptica) e Ingles 3.
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> 	Desde el colegio me interesé en estudiar alguna ingeniería. Desde pequeño me gustaba jugar con motores pequeños conectandolos 
+	a unas baterias y encendiendo LED'S de varios colores; desde entonces creo que sentí gran curiosidad por los circuitos 
+	electrónicos. Mucho despues vi en un tio que es ingeniero electrónico, un modelo de vida y de superación personal, cosa 
+	que me motivó a tomar la decisión de estudiar ingeniería electrónica.
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	A nivel técnico y profesional, me gustaria desarrollar habilidades como creación y diseño de software y hardware, ser programador y 
+	diseñador en redes y bases de datos. También me gustaria enfocarme mucho por la parte empresarial, tener capacidad de liderazgo y 
+	ser clave fundamental en la administración de proyectos.
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+->	Me encantaria que me pagaran por ser ingeniero de planta de una gran multinacional, me gustaria mucho que me pagaran por hacer parte 
+	de la creación y diseño de un gran dispositivo que revolucione el mercado global. Me gustaría viajar mucho, conocer muchos lugares por mi 
+	trabajo y aprehender cada día nuevas cosas para aplicarlas en mi vida laboral.	
+
+7. ¿Qué le apasiona a nivel profesional?
+->	Una de mis grandes motivaciones en este mismo momento, es llegar a ser algún día como mi tio; puesto que en el veo una persona que alcanzó sus 
+	sueños con un inmenso sacrificio y dedicación. Me encantaría llegar a ser gerente de proyectos en una gran multinacional en el area de las 
+	telecomunicaciones, ser un Proyect Manager Professional es mi meta, teniendo una gran capacidad técnica para aportar y ser gran ayuda en lo que 
+	sea necesario. Me gustaria aprehender a programar y tener ingresos extra desde mi computador personal, aunque por ahora se me haga un poco 
+	dificil el pensamiento como programador.
+	
+8. ¿De qué parte de Colombia es?
+->	Soy de Guadalajara de Buga, Valle del Cauca.
