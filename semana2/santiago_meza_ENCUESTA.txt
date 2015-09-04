@@ -1,0 +1,35 @@
+1. ¿Cuál es su carrera?
+	Ingeniería Eléctrica.
+
+2. ¿En que semestre va?
+	Cuarto semestre.
+
+3. ¿Qué asignaturas está viendo?
+	Cálculo diferencial
+	Álgebra lineal
+	Física: oscilaciones, ondas y óptica
+	Técnicas de programación
+	Catedra de la paz
+	Inglés II
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+	Mi papá lleva mucho tiempo trabajando en un campo relacionado con la electricidad, pero enfocado a lo automotriz;
+	desde niño lo veía y me llamaba mucho la atención lo que hacía pero pense un poquito mas allá y quise saber por ejemplo
+	como se ilumina una gran ciudad, como es que está siempre "encendida", por eso entre a estudiar esta carrera para conocer
+	que ocurre detras de todo eso pero también para formar parte de los responsables que hacen que todos esos procesos
+	se lleven correctamente a cabo.
+
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+	Poder diseñar y crear una red eléctrica, un sistema de generación, y ahora que estoy viendo esta asignatura me llamo la atención
+	este cuento de la programación así que también me gustaría desarrollar habilidades relacionadas a la programación.
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+	Me gustaría que me pagaran por investigar, por resolver problemas, por desarrollar software, por diseñar equipo eléctrico,
+	y espero que llegue el día en el que yo sea mi jefe ya sea como independiente o que sea el dueño de mi propia empresa.
+
+7. ¿Qué le apasiona a nivel profesional?
+	Saber como funcionan las cosas, tener la capacidad de crear objetos, de solucionar problemas de maneras creativas e innovadoras,
+	diseñar y crear equipo nuevo para el bienestar de la gente.
+
+8. ¿De qué parte de Colombia es?
+	Soy de Manizales, Caldas.
