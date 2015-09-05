@@ -1,6 +1,6 @@
 ﻿# AyudanteNomina v1.0
-# Desarrollado por Juan Sebastian Lopez Villa
-# Agosto 30 de 2015
+# Desarrollado por Harold Esteban Bolaños
+# Septiembre 5 de 2015
 # Valores de porcentajes para liquidacion de nomina tomados de http://www.gerencie.com/liquidacion-de-la-nomina.html.
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
