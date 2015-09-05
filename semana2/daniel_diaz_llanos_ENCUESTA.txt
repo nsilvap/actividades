@@ -1,0 +1,30 @@
+﻿1. ¿Cuál es su carrera?
+	-> Ingenieria Eléctrica.
+	
+2. ¿En que semestre va?
+	-> Tercer Semestre.
+	
+3. ¿Qué asignaturas está viendo?
+	-> Cálculo Diferencial; Algebra Lineal; Catedra de la Paz; Física Mecanica; Tecnicas de Programación.
+	
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+	-> Por una parte la exigencias de mis papas de estudias alguna ingenieria, al momento de elegir la carrera
+	las que mas me parecian atractivas era electrica y electronica, ya que desde pequeño mi papá siempre ah
+	arreglado aparatos electricos tales como pulidoras, sierras, taladros etc... entonces me inscribi a la que mas
+	se me acomodaba a mis gustos.
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+	-> Quiero desarrollar las habilidades tales que cuando me encuentre en un problema como ingeniero tenga la 
+	capacidad de sentarme analizar y probeher una solucion efectiva y eficaz.
+	
+	Habilidades tales como diseñar planos de un tendido electrico o mejoramiento del mismo, que simplemente sea 
+	el que diga como van hacer las cosas y revisar que esten quedando bien.
+	
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+	-> Por Diseñar y Supervisar todo lo relacionado con la ingenieria electrica.
+	
+7. ¿Qué le apasiona a nivel profesional?
+	-> EL echo de ganar Dinero para un sostenimiento digno de una familia en un futuro.
+	
+8. ¿De qué parte de Colombia es?
+	-> Chinchina, Caldas Colombia.
