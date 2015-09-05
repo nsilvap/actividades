@@ -1,0 +1,39 @@
+﻿1. ¿Cuál es su carrera?
+->	Ingeniería Electrónica.
+
+2. ¿En que semestre va?
+->	Curso cuarto semestre.
+
+3. ¿Qué asignaturas está viendo?
+->	-Cálculo Vectorial
+	-Electrónica analógica I
+	-Electromedicina
+	-Estructuras computacionales
+	-Técnicas de Programación
+	-Física de oscilaciones, ondas y optica
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+->	Entré a estudiar está carrera debido a que pienso que incorpora 
+	las areas de creación de máquinas tanto en su parte tangible y 
+	procesos brindados por medio del sotfware, lo cual llena completamente 
+	mis gustos ya que teniendo este conocimiento tendría las capacidades y 	
+	conocimientos para crear diversos procesos en incontables rangos de aplicación.
+
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	Quiero tener la capacidad para crear la solución a un problema a partir de mis
+	conocimientos, esto creando automatismos para que los procesos sean lo más exactos.
+	Poder comprender el funsionamiento de lo que me rodea para darle una mejor aplicación
+	y utilizarlo beneficamente en mis proyectos
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+->	Me gustaria tener el control de una insdustria compleja como de fabricación y
+	ensamblaje de automoviles, aeroespacial, aeronautica, control de procesos en 
+	producción de alimentos.
+
+7. ¿Qué le apasiona a nivel profesional?
+->	Me apasiona el sentirme por buen camino gracias a los conocimientos que estoy adquiriendo,
+	el tener que pensar cada vez más complejamente para darle solución a mis actividades,
+	el conocer de personas que han estudiado lo mismo y tienen unos conocimientos excelentes.
+
+8. ¿De qué parte de Colombia es?
+->	Soy de Moniquirá, Boyacá.
