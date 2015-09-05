@@ -1,0 +1,34 @@
+﻿1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> 	4to semestre.
+
+3. ¿Qué asignaturas está viendo?
+-> 	Cálculo Integral
+	Ecuaciones Diferenciales
+	Física: Ondas, Oscilaciones y Óptica
+	Electrónica Analógica ii
+	Cátedra Gabriel García Márquez 
+	Técnicas de Programación
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> 	Ingrese porque me gusta todo lo que tiene que ver con la tecnología y cada una de las cosas que se pueden llegar a crear 
+	cuando se unen el hardware y la programación. 
+	Me motivó el haber aprendido un poco de esto en el colegio, ya que fue una de las bases para poder tomar esta decisión.Y ahora
+	me motiva más el saber que gracias a todo esto puedo llegar a crear y diseñar aplicaciones, máquinas, robots y todo este tipo de 
+	dispositivos que podrían ayudar a las personas. 
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	Quiero poder crear y diseñar circuitos, poder desarrollar software. 
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+->	Me gustaría que me pagaran por crear nuevos dispositivos o por hacerlos de una manera u otra mas eficaz, por investigar y compartir 
+	conocimientos con personas de otros lugares del mundo, por desarrollar y diseñar software y hardware que me permita ayudar a las personas.
+
+7. ¿Qué le apasiona a nivel profesional?
+->	Poder conocer como funciona el mundo a través de la electrónica y los sistemas, ya que me sorprende la cantidad de cosas que se pueden 
+	lograr cuando se trabaja en conjunto con estos dos campos.
+
+8. ¿De qué parte de Colombia es?
+->	Manizales, Caldas.
