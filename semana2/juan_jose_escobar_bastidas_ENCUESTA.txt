@@ -1,30 +1,30 @@
-1. ¿Cuál es su carrera?
--> 	Ingeniería Electrónica
+ï»¿1. Â¿CuÃ¡l es su carrera?
+-> 	IngenierÃ­a ElectrÃ³nica
 
-2. ¿En que semestre va?
+2. Â¿En que semestre va?
 -> 	Estoy cursand cuarto semestre.
 
-3. ¿Qué asignaturas está viendo?
--> 	Técnicas de Programación 
-        Electrónica Analógica 
-	Física de ondas y osciolaciones
+3. Â¿QuÃ© asignaturas estÃ¡ viendo?
+-> 	TÃ©cnicas de ProgramaciÃ³n 
+        ElectrÃ³nica AnalÃ³gica 
+	FÃ­sica de ondas y osciolaciones
 	Calculo Vectorial
 	Sistemas digitales
-	Redes telefónicas
+	Redes telefÃ³nicas
 
-4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
--> 	Siempre tuve en mente ingeniería electrónica, sin saber realmente que era realmente me llamaba mucho la atención por todo lo que tenía que ver con la innovación de tecnología. Y luego por un curso técnico que hice vi lo que era el estudio de circuitos
-        eléctricos, programación muy básica en lpp y redes de comunicación de datos. Esto fue el último año de colegio, ya con eso confirmé que la electrónica era lo mio. 
+4. Â¿PorquÃ© ingresÃ³ a estudiar esa carrera? Â¿QuÃ© lo(a) motivÃ³?
+-> 	Siempre tuve en mente ingenierÃ­a electrÃ³nica, sin saber realmente que era realmente me llamaba mucho la atenciÃ³n por todo lo que tenÃ­a que ver con la innovaciÃ³n de tecnologÃ­a. Y luego por un curso tÃ©cnico que hice vi lo que era el estudio de circuitos
+        elÃ©ctricos, programaciÃ³n muy bÃ¡sica en lpp y redes de comunicaciÃ³n de datos. Esto fue el Ãºltimo aÃ±o de colegio, ya con eso confirmÃ© que la electrÃ³nica era lo mio. 
 	
-5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
-->	El análisis de circuitos con componentes analógicos y digitales, la programación, y  el manejo de señales y redes de comunicación.
+5. Â¿QuÃ© habilidades quiere desarrollar como ingeniero(a)?
+->	El anÃ¡lisis de circuitos con componentes analÃ³gicos y digitales, la programaciÃ³n, y  el manejo de seÃ±ales y redes de comunicaciÃ³n.
 
-6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
-->	Por la implementación e innovación de redes telemáticas de alto nivel en Colombia y en el mundo. 
-        Por ofrecer el conocimiento que adquiriré con la experiencia laboral y academia.
+6. Â¿Por quÃ© tipo de actividades le gustarÃ­a que le pagaran a nivel profesional?
+->	Por la implementaciÃ³n e innovaciÃ³n de redes telemÃ¡ticas de alto nivel en Colombia y en el mundo. 
+        Por ofrecer el conocimiento que adquirirÃ© con la experiencia laboral y academia.
 	
-7. ¿Qué le apasiona a nivel profesional?
-->	Me apasiona saber como funcionan realmente las redes de telecomunicación y poderlas estudiar a fondo, para mejorarlas e innovar en el campo.
+7. Â¿QuÃ© le apasiona a nivel profesional?
+->	Me apasiona saber como funcionan realmente las redes de telecomunicaciÃ³n y poderlas estudiar a fondo, para mejorarlas e innovar en el campo.
 
-8. ¿De qué parte de Colombia es?
+8. Â¿De quÃ© parte de Colombia es?
 ->	Soy de Neiva-Huila.
