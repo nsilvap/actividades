@@ -1,10 +1,10 @@
-1. ¿Cuál es su carrera?
+ï»¿1. ¿Cuál es su carrera?
 -> 	Ingeniería Electrónica
 
 2. ¿En que semestre va?
 -> 	voy en cuarto semestre.
 
-3. ¿Qué asignaturas está viendo?
+3. Â¿QuÃ© asignaturas estÃ¡ viendo?
 -> 	estoy viendo analogica 2,estructuras computacioneles ,calculo vectorial, ecuaciones difrenciales, fisica de ondas, tecnicas de programaciòn.
 4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
 -> 	desde muy pequeño me han intrigado el  funcionamiento de las cosas mas que todo dispositivos electronicos, soy tecnologo en mantenimiento electronico de automotores
