@@ -1,0 +1,2 @@
+
+Numero de argumentos incorrecto. Debe suministrar un argumento con el nombre de archivo de nomina.

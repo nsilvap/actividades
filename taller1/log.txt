@@ -1,0 +1,4 @@
+
+Creados archivos errores.txt y log.txt
+
+Programa terminado por error... Verificar archivo errores.txt para mas detalles.
