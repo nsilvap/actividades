@@ -1,11 +1,11 @@
-﻿# AyudanteNomina v2.0
+﻿# AyudanteNomina v2.0.3
 # Programa para calcular la nomina de una empresa. Lee los nombres y salarios desde un archivo de texto
 # que se suministra como argumento de linea de comandos, por ejemplo, nombres.txt. Al final guarda la liquidacion
 # en el archivo liquidacion.txt, el registro de errores en errores.txt y el registro de operacion en log.txt y al final
 # imprime en pantalla el array liquidacion, y tambien imprime en pantalla el archivo de liquidacion.
 
-# Desarrollado por Juan Sebastian Lopez Villa
-# Agosto 31 de 2015
+# Desarrollado por Cristhian Danilo Viveros Delgado
+# Septiembre 21 de 2015
 # Valores de porcentajes para liquidacion de nomina tomados de http://www.gerencie.com/liquidacion-de-la-nomina.html.
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
