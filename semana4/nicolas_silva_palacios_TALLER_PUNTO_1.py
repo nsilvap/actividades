@@ -1,4 +1,4 @@
-# AyudanteNomina v2.0
+﻿# AyudanteNomina v2.0
 # Programa para calcular la nomina de una empresa. Lee los nombres y salarios desde un archivo de texto
 # que se suministra como argumento de linea de comandos, por ejemplo, nombres.txt. Al final guarda la liquidacion
 # en el archivo liquidacion.txt, el registro de errores en errores.txt y el registro de operacion en log.txt.
