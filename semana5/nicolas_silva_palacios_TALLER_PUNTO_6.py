@@ -1,4 +1,4 @@
-# AyudanteNomina v2.0.6
+﻿# AyudanteNomina v2.0.6
 # Programa para calcular la nomina de una empresa. Lee los nombres y salarios desde un archivo de texto
 # que se suministra como argumento de linea de comandos, las apropiaciones y deducciones
 # las lee desde dos archivos diferentes como argumento de linea de comandos. Al final guarda la liquidacion
