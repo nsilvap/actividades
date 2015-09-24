@@ -482,3 +482,4 @@ for w in range(0, numero_lineas_nomina):
 
 guardar_log("Liquidacion guardada...");
 # Fin de ciclo 3 
+

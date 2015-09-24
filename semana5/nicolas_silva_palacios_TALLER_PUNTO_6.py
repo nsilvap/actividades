@@ -11,6 +11,7 @@
 # Importar libreria sys para manejo de argumentos de linea de comandos
 import sys
 
+
 # ------------------ Inicio de definicion de constantes y parametros ------------------ #
 
 # Nombre archivo de errores
