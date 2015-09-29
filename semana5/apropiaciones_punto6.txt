@@ -1,0 +1,10 @@
+Salud*0.085
+Pension*0.12
+Arl*0.00522
+Sena*0.02
+ICBF*0.03
+CajasCompensacion*0.04
+Cesantias*0.0833
+InteresCesantias*0.01
+Prima*0.0833
+Vacaciones*0.0833
