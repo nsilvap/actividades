@@ -1,0 +1,36 @@
+﻿1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> 	Actualmente me encuentro en 5to semestre.
+
+3. ¿Qué asignaturas está viendo?
+-> 	Las asignaturas que estoy viendo este semestre son:
+		Calculo
+		Fisica ondas 
+		técnicas de programación
+		Analogica
+		Constitucion y democracia
+		Electromedicina
+		Teoria de decision
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivá?
+	Me motiva esta carrera porque me gusta saber como funcionan las cosas, 
+	en el mundo de hoy todo funciona a base de la electronica.
+
+
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+	como ingeniero me gustaria estar en mundo de la robotica, las grandes fabricas del mundo funcionan con robots
+
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+	Me gustaria que me pagara por estar desarrollando inteligencia artificial para los robot, 
+	me gustaria que me pagaran por lo que me gusta hacer, por estar en el cuento de los robots
+
+7. ¿Qué le apasiona a nivel profesional?
+	la pasion a nivel profesional es la electronica desarrollar ideas, crear cosas nuevas;
+	rediseñando las cosas para mejorarlas 
+
+
+8. ¿De qué parte de Colombia es?
+->	Manizales, Caldas
