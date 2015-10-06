@@ -12,6 +12,10 @@ import sys
 
 # ------------------ Inicio de definicion de constantes y parametros ------------------ #
 
+total_ingenieros = 0
+total_operarios = 0
+total_tecnicos = 0
+total_secretarios = 0
 # Nombre archivo de errores
 nombre_archivo_errores = "errores.txt"
 
@@ -45,16 +49,6 @@ porcentaje_riesgos = 0.00522
 # ------------------ Fin de definicion de constantes y parametros ------------------ #
 
 # ------------------ Inicio de definicion de funciones empleadas ------------------ #
-
-def imprimir_archivo_liquidacion(array_liquidacion)
-	f = open(array_liquidacion, "r")
-	file_contents = f.read()
-	print(file_contents)
-	f.close()
-
-def imprimir_array_liquidacion(array_liquidacion):
-	for p in range(len(array_liquidacion)):
-		print array_liquidacion[p]
 
 # Funcion que crear un archivo con el nombre especificado. Devuelve True si fue exitoso o False en caso de error.
 def crear_archivo(nombre_archivo):
@@ -104,14 +98,14 @@ def guardar_log(mensaje_registro):
 # La segunda posicion contiene el nombre completo en caso de ser valida la linea, de lo contrario vacio.
 # La tercera posicion contiene el salrio en caso de ser valida la linea, de lo contrario vacio.
 def validar_linea(linea_por_validar, numero_linea):	
-	array_respuesta = [0 for x in range(3)]
+	array_respuesta = [0 for x in range(4)]
 	
 	# Separar la linea por el simbolo (token) *
 	arreglo_campos = linea_por_validar.split("*")
 	
 	# Validar la estructura de cada linea.
 	# Validacion 4 (Va4)
-	if (len(arreglo_campos) != 2):
+	if (len(arreglo_campos) != 3):
 		guardar_error("La linea " + str(numero_linea) + " no cumple con la estructura requerida! Revisarla!")
 		array_respuesta[0] = False
 		return array_respuesta
@@ -127,7 +121,7 @@ def validar_linea(linea_por_validar, numero_linea):
 		array_respuesta[0] = False
 		return array_respuesta
 	
-	array_respuesta[1] = arreglo_nombre
+	array_respuesta[1] = nombre_por_validar
 	
 	# Validar que el salario sea de tipo numerico
 	# Validacion 6 (Va6)
@@ -138,6 +132,12 @@ def validar_linea(linea_por_validar, numero_linea):
 		guardar_error("El valor de salario " + arreglo_campos[1] + " no puede convertirse a entero! Revisar linea numero " + str(numero_linea) + " de archivo de nomina.")
 		array_respuesta[0] = False
 		return array_respuesta
+	cargo = arreglo_campos[2]
+	
+	if( cargo[len(cargo)-1] == "\n"):	
+		array_respuesta[3] = cargo[0:len(cargo)-1]
+	else:
+		array_respuesta[3] = cargo
 		
 	array_respuesta[0] = True
 	return array_respuesta
@@ -205,7 +205,7 @@ if (numero_lineas_nomina < numero_minimo_lineas):
 # Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # nomina[indice][0] -> Nombre completo empleado
 # nomina[indice][1] -> Salario empleado
-nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nomina)]
+nomina = [[columnas for columnas in range(3)] for filas in range(numero_lineas_nomina)]
 
 # Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # liquidacion[indice][0] -> Aporte auxilio de transporte efectivo.
@@ -234,10 +234,15 @@ for x in range(0, numero_lineas_nomina):
 	guardar_log("Procesando linea " + str(x+1));
 	
 	# Se almacena nombre completo
+	# print linea_validada[1]
 	nomina[x][0] = linea_validada[1]
 	
 	# Se almacena salario
 	nomina[x][1] = linea_validada[2]
+	
+	# Se almacena cargo
+	nomina[x][2] = linea_validada[3]
+
 
 guardar_log("Nomina cargada en memoria!");
 # Fin de ciclo 1
@@ -245,6 +250,7 @@ guardar_log("Nomina cargada en memoria!");
 # Ciclo 2 para realizar el calculo de la liquidacion
 guardar_log("Calculando liquidacion...");
 for z in range(0, numero_lineas_nomina):
+	
 	# Se almacena salario base para realizar calculos
 	salario_base = int(nomina[z][1])
 
@@ -402,6 +408,19 @@ for z in range(0, numero_lineas_nomina):
 	
 	# liquidacion[indice][12] -> Salario neto para el empleado
 	liquidacion[z][12] = salario_neto_empleado	
+	
+	if nomina[z][2].startswith("Ingenier@"):
+		total_ingenieros = total_ingenieros + costo_total_empresa
+	elif nomina[z][2] == "Secretari@":
+		total_secretarios = total_secretarios + costo_total_empresa
+	elif nomina[z][2] == "Tecnic@":
+		total_tecnicos = total_tecnicos + costo_total_empresa
+	elif nomina[z][2] == "Operari@":
+		total_operarios = total_operarios + costo_total_empresa
+	else:
+		terminar_programa("Este cargo no es valido")
+
+
 
 guardar_log("Liquidacion calculada!");
 # Fin de ciclo 2
@@ -411,6 +430,11 @@ crear_archivo(nombre_archivo_liquidacion)
 
 # Ciclo 3 para guardar liquidacion en archivo liquidacion.txt.
 guardar_log("Guardando liquidacion...");
+
+contenido_linea = ("Ingenier@", total_ingenieros, "Tecnic@", total_tecnicos, "Operari@", total_operarios, "Secretari@", total_secretarios)
+formato_linea = "%s: %.2f|%s: %.2f|%s: %.2f|%s: %.2f\n"
+escribir_linea_archivo(nombre_archivo_liquidacion, formato_linea % (contenido_linea))
+
 for w in range(0, numero_lineas_nomina):
 	contenido_linea = (
 		nomina[w][0], 

@@ -9,7 +9,7 @@
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
 import sys
-import os
+
 # ------------------ Inicio de definicion de constantes y parametros ------------------ #
 
 # Nombre archivo de errores
@@ -40,7 +40,7 @@ tope_fondo_solidaridad_pensional = 4*salario_minimo
 porcentaje_fondo_solidaridad_pensional = 0.01
 
 # Modifcar porcentaje segun el tipo de riesgo definido en: https://www.positiva.gov.co/ARL/Paginas/default.aspx
-porcentaje_riesgos = 0.00522
+
 
 # ------------------ Fin de definicion de constantes y parametros ------------------ #
 
@@ -89,50 +89,55 @@ def guardar_error(mensaje_error):
 def guardar_log(mensaje_registro):
 	escribir_linea_archivo(nombre_archivo_registro, "\n" + mensaje_registro + "\n")
 
-# Funcion para validar una linea del archivo que contiene los nombres.
-# Devuelve un array de tamanio 2. La primera posicion indica si es valido, con True y si es invalido con False.
+def validar_linea_dedapr(linea_por_validar, numero_linea):
+	try:
+		porcentaje = float(linea_por_validar)
+		return True
+	except ValueError:
+		guardar_error("La linea " + str(numero_linea) + " de las deducciones o las apropiaciones")
+		return False
+
+
+# Funcion para validar una linea del archivo que contiene la nomina.
+# Devuelve un array de tamanio 3. La primera posicion indica si es valido, con True y si es invalido con False.
 # La segunda posicion contiene el nombre completo en caso de ser valida la linea, de lo contrario vacio.
-def validar_linea_nombres(linea_por_validar, numero_linea):
-	array_respuesta = [0 for x in range(2)]
-		
-	# Validar la estructura de cada linea.
-	nombre_por_validar = linea_por_validar
+# La tercera posicion contiene el salrio en caso de ser valida la linea, de lo contrario vacio.
+def validar_linea(linea_por_validar, numero_linea):	
+	array_respuesta = [0 for x in range(3)]
 	
-	nombre_por_validar = nombre_por_validar[0:len(nombre_por_validar)-1]
+	# Separar la linea por el simbolo (token) *
+	arreglo_campos = linea_por_validar.split("*")
+	
+	# Validar la estructura de cada linea.
+	# Validacion 4 (Va4)
+	if (len(arreglo_campos) != 2):
+		guardar_error("La linea " + str(numero_linea) + " no cumple con la estructura requerida! Revisarla!")
+		array_respuesta[0] = False
+		return array_respuesta
+		
+	nombre_por_validar = arreglo_campos[0]
 	
 	arreglo_nombre =  nombre_por_validar.split(" ")
 	
 	# Validar el numero de palabras del nombre
 	# Validacion 5 (Va5)
 	if (len(arreglo_nombre) < 2 or len(arreglo_nombre) > 5):
-		guardar_error("El nombre " + linea_por_validar + " no cumple con la longitud requerida! Revisar linea numero " + str(numero_linea) + " de archivo de nomina.")
-		array_respuesta[0] = False
-		return array_respuesta	
-	
-	array_respuesta[1] = nombre_por_validar
-	array_respuesta[0] = True
-	return array_respuesta
-
-# Funcion para validar una linea del archivo que contiene los salarios.
-# Devuelve un array de tamanio 2. La primera posicion indica si es valido, con True y si es invalido con False.
-# La segunda posicion contiene el salario en caso de ser valida la linea, de lo contrario vacio.
-def validar_linea_salarios(linea_por_validar,numero_linea):
-	array_respuesta = [0 for x in range(2)]
-	
-	# Validar el salario, que sea entero y que sea mayor que 0
-	
-	try:
-		salario = int(linea_por_validar)
-		if salario <= 0:
-			array_respuesta[0] = False
-			guardar_error("El salario de la linea " + str(numero_linea) + " es menor que 0")
-			return array_respuesta
-		array_respuesta[1] = salario
-	except ValueError:
-		guardar_error("El salario de la linea " + str(numero_linea) + " no es un valor entero")
+		guardar_error("El nombre " + arreglo_campos[0] + " no cumple con la longitud requerida! Revisar linea numero " + str(numero_linea) + " de archivo de nomina.")
 		array_respuesta[0] = False
 		return array_respuesta
 	
+	array_respuesta[1] = nombre_por_validar
+	
+	# Validar que el salario sea de tipo numerico
+	# Validacion 6 (Va6)
+	try:
+		salario_base = int(arreglo_campos[1])								
+		array_respuesta[2] = salario_base
+	except ValueError:	
+		guardar_error("El valor de salario " + arreglo_campos[1] + " no puede convertirse a entero! Revisar linea numero " + str(numero_linea) + " de archivo de nomina.")
+		array_respuesta[0] = False
+		return array_respuesta
+		
 	array_respuesta[0] = True
 	return array_respuesta
 	
@@ -140,10 +145,7 @@ def validar_linea_salarios(linea_por_validar,numero_linea):
 def terminar_programa(mensaje_terminacion):
 	guardar_error(mensaje_terminacion)
 	guardar_log("Programa terminado por error... Verificar archivo errores.txt para mas detalles.")
-	try:
-		os.remove(nombre_archivo_liquidacion)
-	except WindowsError:
-		a=0
+	
 	# Terminar el programa
 	sys.exit()
 	
@@ -166,45 +168,32 @@ cantidad_argumentos = len(sys.argv)
 
 # Validar que el numero de argumentos sea igual a 2, garantizando que se haya el nombre del archivo de nomina.
 # Validacion 1 (Va1)
-if (cantidad_argumentos != 3):	
+if (cantidad_argumentos != 2):	
 	terminar_programa("Numero de argumentos incorrecto. Debe suministrar un argumento con el nombre de archivo de nomina.")
 
 guardar_log("Numero de argumentos OK")
 
-nombre_archivo_nombres = sys.argv[1]
-nombre_archivo_salarios = sys.argv[2]
-extension_salarios = nombre_archivo_salarios.endswith(".txt")
+nombre_archivo_nomina = sys.argv[1]
 
 # Validar que el archivo de nomina suministrado como argumento tenga extension .txt.
 # Validacion 2 (Va2)
-if (nombre_archivo_nombres.endswith(".txt") == False):
-	if (extension_salarios == False):
-		terminar_programa("Ambos archivos tienen extension erronea")
-	else: 
-		terminar_programa("El archivo nombres no tiene la extension correcta")
-else:
-	if (extension_salarios == False):
-		terminar_programa("El archivo salarios no tiene la extension correcta")
-
-guardar_log("Extension de archivos OK")
+if (nombre_archivo_nomina.endswith(".txt") == False):
+	terminar_programa("El archivo de nomina no tiene extension .txt!")
+	
+guardar_log("Extension de archivo de nomina OK")
 
 # Variable que almacena las lineas del archivo, su contenido como tal.
-lineas_archivo_nombres = tuple(leer_lineas_archivo(nombre_archivo_nombres))
-lineas_archivo_salarios = tuple(leer_lineas_archivo(nombre_archivo_salarios))
+lineas_archivo_nomina = tuple(leer_lineas_archivo(nombre_archivo_nomina))
 
 # Variable que almacena el numero de lineas del archivo
-numero_lineas_nombres = len(lineas_archivo_nombres)
-numero_lineas_salarios = len(lineas_archivo_salarios)
+numero_lineas_nomina = len(lineas_archivo_nomina)
 
 guardar_log("Archivo de nomina leido OK")
 
 # Validar que el archivo tenga el minimo numero de lineas.
 # Validacion 3 (Va3)
-if (numero_lineas_nombres != numero_lineas_salarios):
-	terminar_programa("Los archivos no tienen el mismo numero de lineas")
-elif (numero_lineas_nombres < numero_minimo_lineas): 
-	 terminar_programa("Los archivos tienen menos de 2 lineas")
-guardar_log("Numero de lineas de ambos archivos OK")
+if (numero_lineas_nomina < numero_minimo_lineas):
+	terminar_programa("El archivo de nomina debe contener como minimo " + str(numero_minimo_lineas) + " lineas!")
 
 # ------------------ Inicio de logica de programa ------------------ #
 	
@@ -212,14 +201,12 @@ guardar_log("Numero de lineas de ambos archivos OK")
 # se procede a realizar los calculos y procesamientos.
 
 # Arrays que contendran la informacion de nomina y liquidacion.
-# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nombres
-# o numero_lineas_salarios, igualmente ambos tienen el mismo numero de lineas porque ya pasaron por tal validacion.
+# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # nomina[indice][0] -> Nombre completo empleado
 # nomina[indice][1] -> Salario empleado
-nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nombres)]
+nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nomina)]
 
-# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nombres
-# o numero_lineas_salarios, igualmente ambos tienen el mismo numero de lineas porque ya pasaron por tal validacion.
+# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # liquidacion[indice][0] -> Aporte auxilio de transporte efectivo.
 # liquidacion[indice][1] -> Aporte cesantias 
 # liquidacion[indice][2] -> Aporte intereses sobre cesantias
@@ -233,38 +220,44 @@ nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_n
 # liquidacion[indice][10] -> Aporte fondo de solidaridad
 # liquidacion[indice][11] -> Costo total para la empresa
 # liquidacion[indice][12] -> Salario neto para el empleado
-liquidacion = [[columnas for columnas in range(13)] for filas in range(numero_lineas_nombres)]
+liquidacion = [[columnas for columnas in range(13)] for filas in range(numero_lineas_nomina)]
 
 # Ciclo 1 para almacenar la informacion en el array de nomina
 guardar_log("Cargando nomina en memoria...");
-for x in range(0, numero_lineas_nombres):
-	linea_validada_nombres = validar_linea_nombres(lineas_archivo_nombres[x], x+1)
-	linea_validada_salarios = validar_linea_salarios(lineas_archivo_salarios[x], x+1)
+for x in range(0, numero_lineas_nomina):
+	linea_validada = validar_linea(lineas_archivo_nomina[x], x+1)
 	
-	if(linea_validada_nombres[0] == False):
-		if(linea_validada_salarios[0] == False):
-			terminar_programa("Error en ambos archivos")
-		else:
-			terminar_programa("Error en archivo de nombres!")
-	else:
-		if(linea_validada_salarios[0] == False):
-			terminar_programa("Error en archivo de salarios!")
-	
-	
+	if(linea_validada[0] == False):
+		terminar_programa("Error en archivo de nomina!")
+
 	guardar_log("Procesando linea " + str(x+1));
 	
 	# Se almacena nombre completo
-	nomina[x][0] = linea_validada_nombres[1]
+	nomina[x][0] = linea_validada[1]
 	
 	# Se almacena salario
-	nomina[x][1] = linea_validada_salarios[1]
+	nomina[x][1] = linea_validada[2]
 
 guardar_log("Nomina cargada en memoria!");
 # Fin de ciclo 1
 
+array_deducciones = tuple(leer_lineas_archivo("deducciones.txt"))
+array_apropiaciones = tuple(leer_lineas_archivo("apropiaciones.txt"))
+
+# Se validan los archivos apropiaciones y deducciones
+
+for u in range(0,2):
+	dedvalidada = validar_linea_dedapr(array_deducciones[u], u+1)
+	aprvalidada = validar_linea_dedapr(array_apropiaciones[u], u+1)
+	if dedvalidada == False or aprvalidada == False:
+		terminar_programa("Error en los archivos de deducciones y apropiaciones")
+
+
+
+
 # Ciclo 2 para realizar el calculo de la liquidacion
 guardar_log("Calculando liquidacion...");
-for z in range(0, numero_lineas_nombres):
+for z in range(0, numero_lineas_nomina):
 	# Se almacena salario base para realizar calculos
 	salario_base = int(nomina[z][1])
 
@@ -295,18 +288,19 @@ for z in range(0, numero_lineas_nombres):
 		debitar_fondo_solidaridad = True
 
 	# --------------- Calculo de apropiaciones de nomina --------------- #
-			
+	porcentaje_riesgos = float(array_apropiaciones[2])
+	
 	# ----- Seguridad Social ----- #
 	# Porcentaje aporte de salud realizado por la empresa 8.5%
 	guardar_log("Calculando aporte salud empresa ...");	
-	aporte_salud_empresa = 0.085*salario_base
+	aporte_salud_empresa = float(array_apropiaciones[0])*salario_base
 
 	# Porcentaje aporte de salud realizado por la empresa 12%
 	guardar_log("Calculando aporte pension empresa ...");
-	aporte_pension_empresa = 0.12*salario_base
+	aporte_pension_empresa = float(array_apropiaciones[1])*salario_base
 
 	# Porcentaje aporte de riesgos laborales realizado por la empresa.
-	guardar_log("Calculando aporte ARL con porcentaje " + ("%.3f" % porcentaje_riesgos) + " ...");
+	guardar_log("Calculando aporte ARL con porcentaje " + str(porcentaje_riesgos) + " ...");
 	aporte_arl_empresa = porcentaje_riesgos*salario_base
 
 	# Variable para acumular el aporte de seguridad social	
@@ -328,7 +322,7 @@ for z in range(0, numero_lineas_nombres):
 	# Variable para acumular el aporte a parafiscales
 	total_aporte_parafiscales = aporte_parafiscales_sena + aporte_parafiscales_icbf + aporte_parafiscales_cajas
 
-	# ----- Prestaciones Sociales ----- #	
+	# ----- Prestaciones Sociales ----- #
 	# Porcentaje aporte cesantias realizado por la empresa 8.33%. Se debe tener en cuenta el auxilio de transporte.
 	guardar_log("Calculando aporte cesantias ...");
 	aporte_cesantias = 0.0833*(salario_base + auxilio_transporte_efectivo)
@@ -364,15 +358,15 @@ for z in range(0, numero_lineas_nombres):
 	# --------------- Calculo de deducciones --------------- #
 	# Porcentaje aporte de salud realizado por el empleado 4%
 	guardar_log("Calculando aporte salud empleado ...");
-	aporte_salud_empleado = 0.04*salario_base
+	aporte_salud_empleado = float(array_deducciones[0])*salario_base
 
 	if(debitar_fondo_solidaridad):
 		guardar_log("Empleado paga fondo solidaridad pensional ...");
-		aporte_fondo_solidaridad = porcentaje_fondo_solidaridad_pensional*salario_base		
+		aporte_fondo_solidaridad = float(array_deducciones[1])*salario_base		
 
 	# Porcentaje aporte de salud realizado por el empleado 4%
 	guardar_log("Calculando aporte pension empleado ...");
-	aporte_pension_empleado = 0.04*salario_base
+	aporte_pension_empleado = float(array_deducciones[2])*salario_base
 
 	# --------------- Calculo de salario neto para el empleado --------------- #
 
@@ -431,8 +425,7 @@ crear_archivo(nombre_archivo_liquidacion)
 
 # Ciclo 3 para guardar liquidacion en archivo liquidacion.txt.
 guardar_log("Guardando liquidacion...");
-
-for w in range(0, numero_lineas_salarios):
+for w in range(0, numero_lineas_nomina):
 	contenido_linea = (
 		nomina[w][0], 
 		int(nomina[w][1]), 

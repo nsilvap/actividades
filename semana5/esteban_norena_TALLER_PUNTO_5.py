@@ -11,7 +11,16 @@
 import sys
 
 # ------------------ Inicio de definicion de constantes y parametros ------------------ #
+suma_nomina = 0
+total_ingenieros = 0
+total_operarios = 0
+total_tecnicos = 0
+total_secretarios = 0
 
+contador_ope = 0
+contador_ing = 0
+contador_tec = 0
+contador_sec = 0
 # Nombre archivo de errores
 nombre_archivo_errores = "errores.txt"
 
@@ -94,14 +103,14 @@ def guardar_log(mensaje_registro):
 # La segunda posicion contiene el nombre completo en caso de ser valida la linea, de lo contrario vacio.
 # La tercera posicion contiene el salrio en caso de ser valida la linea, de lo contrario vacio.
 def validar_linea(linea_por_validar, numero_linea):	
-	array_respuesta = [0 for x in range(3)]
+	array_respuesta = [0 for x in range(4)]
 	
 	# Separar la linea por el simbolo (token) *
 	arreglo_campos = linea_por_validar.split("*")
 	
 	# Validar la estructura de cada linea.
 	# Validacion 4 (Va4)
-	if (len(arreglo_campos) != 2):
+	if (len(arreglo_campos) != 3):
 		guardar_error("La linea " + str(numero_linea) + " no cumple con la estructura requerida! Revisarla!")
 		array_respuesta[0] = False
 		return array_respuesta
@@ -117,7 +126,7 @@ def validar_linea(linea_por_validar, numero_linea):
 		array_respuesta[0] = False
 		return array_respuesta
 	
-	array_respuesta[1] = arreglo_nombre
+	array_respuesta[1] = nombre_por_validar
 	
 	# Validar que el salario sea de tipo numerico
 	# Validacion 6 (Va6)
@@ -128,6 +137,12 @@ def validar_linea(linea_por_validar, numero_linea):
 		guardar_error("El valor de salario " + arreglo_campos[1] + " no puede convertirse a entero! Revisar linea numero " + str(numero_linea) + " de archivo de nomina.")
 		array_respuesta[0] = False
 		return array_respuesta
+	cargo = arreglo_campos[2]
+	
+	if( cargo[len(cargo)-1] == "\n"):	
+		array_respuesta[3] = cargo[0:len(cargo)-1]
+	else:
+		array_respuesta[3] = cargo
 		
 	array_respuesta[0] = True
 	return array_respuesta
@@ -195,7 +210,7 @@ if (numero_lineas_nomina < numero_minimo_lineas):
 # Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # nomina[indice][0] -> Nombre completo empleado
 # nomina[indice][1] -> Salario empleado
-nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nomina)]
+nomina = [[columnas for columnas in range(3)] for filas in range(numero_lineas_nomina)]
 
 # Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
 # liquidacion[indice][0] -> Aporte auxilio de transporte efectivo.
@@ -224,10 +239,15 @@ for x in range(0, numero_lineas_nomina):
 	guardar_log("Procesando linea " + str(x+1));
 	
 	# Se almacena nombre completo
+	# print linea_validada[1]
 	nomina[x][0] = linea_validada[1]
 	
 	# Se almacena salario
 	nomina[x][1] = linea_validada[2]
+	
+	# Se almacena cargo
+	nomina[x][2] = linea_validada[3]
+
 
 guardar_log("Nomina cargada en memoria!");
 # Fin de ciclo 1
@@ -235,6 +255,7 @@ guardar_log("Nomina cargada en memoria!");
 # Ciclo 2 para realizar el calculo de la liquidacion
 guardar_log("Calculando liquidacion...");
 for z in range(0, numero_lineas_nomina):
+	
 	# Se almacena salario base para realizar calculos
 	salario_base = int(nomina[z][1])
 
@@ -392,6 +413,24 @@ for z in range(0, numero_lineas_nomina):
 	
 	# liquidacion[indice][12] -> Salario neto para el empleado
 	liquidacion[z][12] = salario_neto_empleado	
+	
+	if nomina[z][2].startswith("Ingenier@"):
+		total_ingenieros = total_ingenieros + costo_total_empresa
+		contador_ing = contador_ing + 1
+	elif nomina[z][2] == "Secretari@":
+		total_secretarios = total_secretarios + costo_total_empresa
+		contador_sec = contador_sec + 1
+	elif nomina[z][2] == "Tecnic@":
+		total_tecnicos = total_tecnicos + costo_total_empresa
+		contador_tec = contador_tec +1
+	elif nomina[z][2] == "Operari@":
+		total_operarios = total_operarios + costo_total_empresa
+		contador_ope= contador_ope + 1
+	else:
+		terminar_programa("Este cargo no es valido")
+	
+	suma_nomina = suma_nomina + costo_total_empresa
+
 
 guardar_log("Liquidacion calculada!");
 # Fin de ciclo 2
@@ -401,9 +440,16 @@ crear_archivo(nombre_archivo_liquidacion)
 
 # Ciclo 3 para guardar liquidacion en archivo liquidacion.txt.
 guardar_log("Guardando liquidacion...");
-contenido_linea = "NOMBRE*SALARIO|AUXILIO TRANSPORTE EFECTIVO|CESANTIAS*INTERESES SOBRE CESANTIAS*PRIMA*VACACIONES|ARL*SALUD EMPRESA*PENSION EMPRESA|SALUD EMPLEADO*PENSION EMPLEADO*FONDO SOLIDARIDAD|COSTO EMPRESA|SALARIO NETO EMPLEADO\n"
-escribir_linea_archivo(nombre_archivo_liquidacion, contenido_linea)
 
+contenido_linea = ("Ingenier@", total_ingenieros, "Tecnic@", total_tecnicos, "Operari@", total_operarios, "Secretari@", total_secretarios)
+formato_linea = "%s: %.2f|%s: %.2f|%s: %.2f|%s: %.2f\n"
+escribir_linea_archivo(nombre_archivo_liquidacion, formato_linea % (contenido_linea))
+contenido_linea = ("Salario promedio para todos los empleados", (float(suma_nomina)/float(numero_lineas_nomina)), "Salario promedio ingenieros", (float(total_ingenieros)/float(contador_ing)), "Salario promedio para tecnicos", (float(total_tecnicos)/float(contador_tec)), "Salario promedio operarios", (float(total_operarios)/float(contador_ope)), "Salario promedio secretarios", (float(total_tecnicos)/float(contador_tec)))
+formato_linea = "%s: %.2f | %s: %.2f * %s: %.2f * %s: %.2f * %s: %.2f\n"
+escribir_linea_archivo(nombre_archivo_liquidacion, formato_linea % (contenido_linea))
+contenido_linea = ("Total nomina todo el anio", (suma_nomina*12), "Nomina anual para ingenieros", (total_ingenieros*12), "Nomina anual para tecnicos", (total_tecnicos*12), "Nomina anual para operarios", (total_operarios*12), "Nomina anual para secretarios", (total_secretarios*12))
+formato_linea = "%s: %.2f | %s: %.2f * %s: %.2f * %s: %.2f * %s: %.2f\n"
+escribir_linea_archivo(nombre_archivo_liquidacion, formato_linea % (contenido_linea))
 
 for w in range(0, numero_lineas_nomina):
 	contenido_linea = (
