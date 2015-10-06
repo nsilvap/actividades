@@ -1,0 +1,30 @@
+﻿1. ¿Cuál es su carrera?
+ 	-Ingeniería Electrónica
+
+2. ¿En que semestre va?
+        -Semestre 4
+
+3. ¿Qué asignaturas está viendo?
+ 	-Electrónica Analógica 2.
+	-Cálculo Integral.
+	-Técnicas de Programación.
+	-Física: Oscilaciones, ondas y óptica.
+	-Sistemas Digitales.
+        -Inglés III.
+
+4. ¿Por qué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+ 	-
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?                                         
+        -Programación, robótica, diseño de circuitos.
+
+6. ¿Por qué tipo de actividades le gustaríaa que le pagaran a nivel profesional?
+        -Por programar.
+	-Por crear nuevos dispositivos. 
+	-Por simplificar y mejorar dispositivos.
+
+7. ¿Qué le apasiona a nivel profesional?
+	-
+
+8. ¿De qué parte de Colombia es?
+	-Manizales-Caldas.
