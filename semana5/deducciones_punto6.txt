@@ -1,0 +1,3 @@
+Salud*0.04
+Solidaridad*0.01
+Pension*0.04
