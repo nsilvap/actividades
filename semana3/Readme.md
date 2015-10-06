@@ -1,10 +1,10 @@
-DESCRIPCIÓN ACTIVIDADES SEMANA 3:
+ï»¿DESCRIPCIÃ“N ACTIVIDADES SEMANA 3:
 
 1) 	Crear un programa en Python v2.7.10 con la siguiente plantilla de nombre de archivo: 
 		
 		nombres_apellidos_AYUDANTE_NOMINA.v1.0.py
 		
-	Para el nombre de archivo, tanto los nombres y los apellidos en minusculas y sólo caracteres ASCII. 
+	Para el nombre de archivo, tanto los nombres y los apellidos en minusculas y sÃ³lo caracteres ASCII. 
 	El contenido del archivo debe estar codificado como UTF-8.
 	
 	El programa debe realizar lo siguiente:
@@ -29,17 +29,17 @@ DESCRIPCIÓN ACTIVIDADES SEMANA 3:
 	1) 	Leerlo y entenderlo.
 	2) 	Cambiar el porcentaje de riesgos profesionales que sea igual a: 0.0codigo, es decir, si su codigo es 815028, 
 		el porcentaje de arl es 0.0815028. 
-	3) 	Editar el autor del programa en el encabezado con su propio nombre en CamelCase, no eñes, no tildes.
+	3) 	Editar el autor del programa en el encabezado con su propio nombre en CamelCase, no eÃ±es, no tildes.
 	
-2)	Realizar un PR (Pull-Request) con el programa creado anteriormente. El título del PR debe tener la siguiente plantilla:
+2)	Realizar un PR (Pull-Request) con el programa creado anteriormente. El tÃ­tulo del PR debe tener la siguiente plantilla:
 
 		Semana 3 - Nombres Apellidos
 		
-	En la descripción del PR escribir:
+	En la descripciÃ³n del PR escribir:
 	
-		Actividades de semana 3 realizadas por Nombres Apellidos. Programa en python denominado AyudanteNomina en su versión 1.0.
+		Actividades de semana 3 realizadas por Nombres Apellidos. Programa en python denominado AyudanteNomina en su versiÃ³n 1.0.
 		
-	Los nombres y apellidos deben ser CamelCase es decir, mayúsculas iniciales. Para el título sólo se aceptan caracteres ASCII. 
-	La eñe (ñ) reemplazarla con n, sin tildes. Las palabras separadas por espacios. La descripción puede tener eñes (ñ) y tildes.
+	Los nombres y apellidos deben ser CamelCase es decir, mayÃºsculas iniciales. Para el tÃ­tulo sÃ³lo se aceptan caracteres ASCII. 
+	La eÃ±e (Ã±) reemplazarla con n, sin tildes. Las palabras separadas por espacios. La descripciÃ³n puede tener eÃ±es (Ã±) y tildes.
 	
 	Se ha dispuesto como ejemplo el pull request https://github.com/tdp201503/actividades/pull/2

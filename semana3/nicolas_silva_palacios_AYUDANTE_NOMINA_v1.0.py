@@ -43,7 +43,7 @@ tope_fondo_solidaridad_pensional = 4*salario_minimo
 porcentaje_fondo_solidaridad_pensional = 0.01
 
 # Modifcar porcentaje segun el tipo de riesgo definido en: https://www.positiva.gov.co/ARL/Paginas/default.aspx
-porcentaje_riesgos = 0.0814066
+porcentaje_riesgos = 0.00522
 
 # Variable para almacenar el salario base para el calculo de las apropiaciones y las deducciones.
 salario_base = 0
