@@ -1,0 +1,30 @@
+﻿1. ¿Cuál es su carrera?
+-> 	Ingeniería Electrónica
+
+2. ¿En que semestre va?
+-> 	Estoy cursand cuarto semestre.
+
+3. ¿Qué asignaturas está viendo?
+-> 	Técnicas de Programación 
+        Electrónica Analógica 
+	Física de ondas y osciolaciones
+	Calculo Vectorial
+	Sistemas digitales
+	Redes telefónicas
+
+4. ¿Porqué ingresó a estudiar esa carrera? ¿Qué lo(a) motivó?
+-> 	Siempre tuve en mente ingeniería electrónica, sin saber realmente que era realmente me llamaba mucho la atención por todo lo que tenía que ver con la innovación de tecnología. Y luego por un curso técnico que hice vi lo que era el estudio de circuitos
+        eléctricos, programación muy básica en lpp y redes de comunicación de datos. Esto fue el último año de colegio, ya con eso confirmé que la electrónica era lo mio. 
+	
+5. ¿Qué habilidades quiere desarrollar como ingeniero(a)?
+->	El análisis de circuitos con componentes analógicos y digitales, la programación, y  el manejo de señales y redes de comunicación.
+
+6. ¿Por qué tipo de actividades le gustaría que le pagaran a nivel profesional?
+->	Por la implementación e innovación de redes telemáticas de alto nivel en Colombia y en el mundo. 
+        Por ofrecer el conocimiento que adquiriré con la experiencia laboral y academia.
+	
+7. ¿Qué le apasiona a nivel profesional?
+->	Me apasiona saber como funcionan realmente las redes de telecomunicación y poderlas estudiar a fondo, para mejorarlas e innovar en el campo.
+
+8. ¿De qué parte de Colombia es?
+->	Soy de Neiva-Huila.
