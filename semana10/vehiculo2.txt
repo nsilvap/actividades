@@ -1,0 +1,4 @@
+tipo=vehiculo
+modelo=X112
+cilindraje=8700
+n_ejes=3
